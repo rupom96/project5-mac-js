@@ -1,4 +1,3 @@
-
 // cost update function
 function updateCost(customization, price) {
     document.getElementById(customization).innerText = price;
@@ -23,7 +22,6 @@ function clickAndSend(customId, customCost, priceCost) {
     })
 }
 
-
 // calling func to update memory
 clickAndSend('16gb-mem', 'mem-cost', 180);
 clickAndSend('8gb-mem', 'mem-cost', 0);
@@ -34,7 +32,6 @@ clickAndSend('third-ssd', 'ssd-cost', 180);
 // calling func to update delivery
 clickAndSend('early-del', 'deli-cost', 20);
 clickAndSend('prime-del', 'deli-cost', 0);
-
 
 // promo process
 document.getElementById('promo-button').addEventListener('click', function () {
