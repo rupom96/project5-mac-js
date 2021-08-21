@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>assignment5-mac</title>
 
-    <!-- css link -->
-    <link rel="stylesheet" href="style.css">
     <!-- bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -32,21 +30,23 @@
                 <!-- Memory -->
                 <div class="mb-5">
                     <h5>Memory</h5>
-                    <button type="button" class="btn btn-primary mb-1 me-1">8GB unified memory</button>
-                    <button type="button" class="btn btn-primary mb-1 me-1">16GB unified memory</button>
+                    <button id="8gb-mem" type="button" class="btn btn-primary mb-1 me-1">8GB unified memory</button>
+                    <button id="16gb-mem" type="button" class="btn btn-primary mb-1 me-1">16GB unified memory</button>
                 </div>
                 <!-- storage -->
                 <div class="mb-5">
                     <h5>Storage</h5>
-                    <button type="button" class="btn btn-primary mb-1 me-1">256GB SSD storage</button>
-                    <button type="button" class="btn btn-primary mb-1 me-1">512GB SSD storage</button>
-                    <button type="button" class="btn btn-primary mb-1 me-1">1TB SSD storage</button>
+                    <button id="first-ssd" type="button" class="btn btn-primary mb-1 me-1">256GB SSD storage</button>
+                    <button id="sec-ssd" type="button" class="btn btn-primary mb-1 me-1">512GB SSD storage</button>
+                    <button id="third-ssd" type="button" class="btn btn-primary mb-1 me-1">1TB SSD storage</button>
                 </div>
                 <!-- Deliver -->
                 <div class="mb-5">
                     <h5>Choose your delivery option</h5>
-                    <button type="button" class="btn btn-primary mb-1 me-1">Friday, Aug 25 FREE Prime Delivery</button>
-                    <button type="button" class="btn btn-primary mb-1 me-1">Friday, Aug 21 Delivery charge $20</button>
+                    <button id="prime-del" type="button" class="btn btn-primary mb-1 me-1">Friday, Aug 25 FREE Prime
+                        Delivery</button>
+                    <button id="early-del" type="button" class="btn btn-primary mb-1 me-1">Friday, Aug 21 Delivery
+                        charge $20</button>
                 </div>
                 <!-- total calculation -->
                 <div style="font-weight: 700;" class="mb-5">
@@ -56,32 +56,32 @@
                             <tr>
                                 <th scope="row"></th>
                                 <td>Best Price</td>
-                                <td>$1299</td>
+                                <td>$<span id="best-price">1299</span></td>
 
                             </tr>
                             <tr>
                                 <th scope="row"></th>
                                 <td>Extra Memory Cost</td>
-                                <td>$0</td>
+                                <td>$<span id="mem-cost">0</span></td>
 
                             </tr>
                             <tr>
                                 <th scope="row"></th>
                                 <td>Extra Storage Cost</td>
-                                <td>$0</td>
+                                <td>$<span id="ssd-cost">0</td>
 
                             </tr>
                             <tr>
                                 <th scope="row"></th>
                                 <td>Delivery charge</td>
-                                <td>$0</td>
+                                <td>$<span id="deli-cost">0</td>
 
                             </tr>
                         <tfoot>
                             <tr>
                                 <th scope="row"></th>
                                 <td>Total price</td>
-                                <td>$1299</td>
+                                <td>$<span id="tot-price">1299</span></td>
 
                             </tr>
                         </tfoot>
@@ -94,10 +94,10 @@
                     <form class="row g-3">
 
                         <div class="col-auto">
-                            <input type="text" class="form-control" id="inputPassword2" placeholder="">
+                            <input id="promo-code" type="text" class="form-control" id="inputPassword2" placeholder="">
                         </div>
                         <div class="col-auto">
-                            <button type="submit" class="btn btn-primary mb-3">Apply</button>
+                            <button id="promo-button" type="button" class="btn btn-primary mb-3">Apply</button>
                         </div>
                     </form>
                 </div>
@@ -110,7 +110,7 @@
     <footer>
         <hr style="height:2px;border-width:0;color:gray;width: 80% ;background-color:gray" class="container">
 
-        <h1 class="text-center">Total: $1299</h1>
+        <h1 class="text-center">Total: $<span id="final-price">1299</span></h1>
 
     </footer>
 
