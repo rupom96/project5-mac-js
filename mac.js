@@ -41,5 +41,5 @@ document.getElementById('promo-button').addEventListener('click', function () {
         const finPrice = currentPrice - (currentPrice * (20 / 100));
         document.getElementById('final-price').innerText = finPrice;
     }
-    document.getElementById('promo-code').value = " ";
+    document.getElementById('promo-code').value = "";
 })
